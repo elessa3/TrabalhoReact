@@ -1,0 +1,90 @@
+.container-login {
+    background-color: var(--cor-fundo-claro);
+    padding-top: calc(var(--tamanho-header) + 2rem);
+    padding-bottom: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    min-height: calc(100vh - var(--tamanho-footer));
+    font-size: var(--tamanho-fonte-forms);
+}
+
+.titulo-login {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.login-imagem {
+    max-width: 2.5rem;
+    width: auto;
+    height: auto;
+
+}
+
+.formulario-login {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    gap: 0.5rem;
+}
+
+.formulario-login h1 {
+    font-size: var(--tamanho-fonte-titulos);
+}
+
+.formulario-login label {
+    padding-top: 0.5rem;
+    text-align: left;
+    width: 100%;
+    max-width: 42.5rem;
+
+}
+
+.formulario-login input {
+    width: 100%;
+    max-width: 42.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--cor-caixa-texto);
+    font-size: var(--tamanho-fonte-forms);
+}
+
+.container-login .mensagem-validacao {
+    color: var(--cor-texto-alerta);
+}
+
+.container-login button {
+    cursor: pointer;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: .5rem 2rem;
+    max-width: 42.5rem;
+    width: 100%;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    background-color: var(--cor-fundo-escuro);
+    font-size: var(--tamanho-fonte-buttons);
+    color: var(--cor-texto-claro);
+    transition: background-color .4s;
+}
+
+.container-login button:hover {
+    background-color: var(--cor-fundo-escuro-alternativo);
+}
+
+.formulario-login p {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

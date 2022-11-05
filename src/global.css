@@ -1,0 +1,82 @@
+/* CSS RESETS */
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* GLOBAL VARIABLES */
+body {
+    /* Cores */
+    --cor-fundo-escuro: #000;
+    --cor-fundo-escuro-alternativo: #222222;
+    --cor-fundo-vermelho: #F11010;
+    --cor-fundo-vermelho-alternativo: #d30e0e;
+    --cor-fundo-claro: #fefefe;
+    --cor-fundo-cinza: #E5E5E5;
+    --cor-caixa-texto: #D1D1D1;
+    --cor-texto-placeholder: #7C7777;
+    --cor-texto-principal: #000000;
+    --cor-texto-claro: #FFFFFF;
+    --cor-texto-alerta: #F11010;
+    --cor-texto-destacado: #EBCB26;
+    --cor-texto-destacado-alternativo: #BD8A08;
+
+    /* Tamanho compoentes */
+    --tamanho-header: 6.75rem;
+    --tamanho-subheader: 3.125rem;
+    --tamanho-footer: 5rem;
+    --tamanho-subfooter: 6.875rem;
+
+    /* Tamanho fontes */
+    --tamanho-fonte-header: 22px;
+    --tamanho-fonte-footer: 18px;
+    --tamanho-fonte-footer-alternativo: 22px;
+    --tamanho-fonte-titulos: 40px;
+    --tamanho-fonte-subtitulos: 32px;
+    --tamanho-fonte-forms: 22px;
+    --tamanho-fonte-buttons: 22px;
+
+    /* Fontes */
+    --fonte-principal: 'Tahoma', sans-serif;
+    font-family: 'Tahoma', sans-serif;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        --tamanho-header: 10rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        --tamanho-footer: 10rem;
+        --tamanho-fonte-footer: 1rem;
+        --tamanho-subfooter: 12rem;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    body {
+        --tamanho-header: 8.5rem;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    body {
+        --tamanho-fonte-footer: 1.1rem;
+    }
+}
