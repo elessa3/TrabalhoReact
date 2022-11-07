@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 import { Home } from "../Pages/Home";
 import { Login } from "../Pages/Login";
+import { Cadastro } from "../Pages/Cadastro";
 import { Carrinho } from "../Pages/Carrinho";
 import { CategoriaBasico } from "../Pages/CategoriaBasico";
 import { CategoriaFitness } from "../Pages/CategoriaFitness";
@@ -17,6 +18,7 @@ export const Root = () => {
             <Routes>
                 <Route path="/" element={ <Home/>}/>
                 <Route path="/login" element={ <Login/>}/>
+                <Route path="/cadastro" element={ <Cadastro/>}/>
                 <Route path="/carrinho" element={ <Carrinho/>}/>
                 <Route path="/categoriabasico" element={ <CategoriaBasico/>}/>
                 <Route path="/categoriafitness" element={ <CategoriaFitness/>}/>
